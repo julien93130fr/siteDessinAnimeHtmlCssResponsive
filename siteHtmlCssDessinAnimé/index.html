@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- relier le fichier CSS au html -->
+   <link rel="stylesheet" href="./style.css">
+
+  
+    <title>DESSIN ANIMÉ</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p>ANIME <span>STORE</span></p>
+        </div>
+        <div class="responsive_menu"></div>
+        <ul class="menu" >
+            <li><a href="#"></a>ACCUEIL</li>
+            <li><a href="#"></a>ANIME</li>
+            <li><a href="#"></a>CONTACT</li>
+        </ul>
+    </header>
+
+    <div class="text">
+        <h1>Regarder des animés</h1>
+        <p>Abonnez vous a Julien Animé</p>
+        <p>Nos prochaines vidéos</p>
+        <div class="links">
+            <a href="#">Regardez</a>
+            <a href="#">S'abonner</a>
+
+        </div>
+    </div>
+<script>
+    let menu_resp = document.querySelector('.responsive_menu');
+    let menu = document.querySelector('.menu');
+    menu_resp.onclick = function(){
+        
+        menu_resp.classList.toggle('active');
+        menu.classList.toggle('responsive');
+        
+    }
+</script>
+
+</body>
+
+</html>
